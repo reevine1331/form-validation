@@ -9,7 +9,7 @@
         :validationMessage="validationMessage"
         @change-value="changeValue"
       />
-      <div>
+      <div class="form-footer">
         <button @click="submit">登録</button>
       </div>
     </div>
@@ -146,6 +146,10 @@ export default {
   &-template {
     width: 100%;
     padding: 16px;
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 </style>
